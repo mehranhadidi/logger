@@ -16,6 +16,8 @@ trait Model
      */
     public static function create(array $data, array $additionalData = null)
     {
+        // TODO Refactor method.
+
         // Add timestamps to data
         $data = array_merge($data, self::getTimeStamps());
 
